@@ -61,6 +61,16 @@ btnStart.addEventListener("click", () => {
                 console.log("in  if");
                 console.log(counter)
                 clearInterval(stopInterval);
+                outputField.style.color = "red"
+                outputField.style.fontSize = "3rem"
+            }
+            else if(counter % 10 == 0){
+                outputField.style.color = "green"
+                outputField.style.fontSize = "2rem"
+            }
+            else {
+                outputField.style.color = "black"
+                outputField.style.fontSize = "0.9rem"
             };
 
 
